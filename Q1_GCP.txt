@@ -1,0 +1,9 @@
+Q1.Steps to create VPC and subnets
+
+1.Open the VPC networks page in GCP console
+2.Click on Create VPC network
+3.Enter a Name for the network
+4.Choose Automatic or Custom for the Subnet creation mode
+5.If Custom, provide Name, Region, IP Address Range, Access and Flow Logs
+6.Choose the Dynamic routing mode for the VPC network
+7.Click Create
