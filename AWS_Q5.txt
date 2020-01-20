@@ -1,0 +1,11 @@
+Q5.Steps to create public and private subnets in VPC
+
+1.Login to AWS Management Console, select Your VPCs and click Create VPC
+2.Enter VPC details(Name Tag, IPv4 CIDR block:10.0.0.0/16) and then click Yes, Create button
+3.Click on Subnets
+4.Creating a Public Subnet:- Give a Name Tag, select your created VPC and enter 10.0.1.0/24 in IPv4 CIDR block
+5.Creating a Private Subnet:- Give a Name Tag, select your created VPC and enter 10.0.2.0/24 in IPv4 CIDR block
+6.Create and attach Internet Gateway, it would be in Detached status, attach it to your VPC
+7.Add a route to Public Subnet by creating a Route Table
+
+
