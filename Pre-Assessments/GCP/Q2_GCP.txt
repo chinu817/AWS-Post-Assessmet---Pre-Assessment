@@ -1,0 +1,14 @@
+Q2.Steps to create a service account and add IAM roles which grants access to GCE and GCS only
+
+Create a Service Account
+1.Open the Service Accounts page in the Cloud Console
+2.Click on Select a project, choose your project, and click Open
+3.Click on Create Service Account
+4.Enter a service account name, an optional description, select a role you wish to grant to the service account and then click Save
+
+Granting roles to a service account
+1.Open the IAM & Admin page in the GCP Console
+2.Click on Select a project, choose a project, and click on Open
+3.Identify the service account to which you want to add a role
+4.Select one or more roles to apply to the service account
+5.Click on Save to apply the roles
