@@ -1,0 +1,31 @@
+Q1.Consider a text file which has multi-lines text, output all the lines which has a specific word and also 
+output the total number of occurrences of that word
+
+total number of occurrences of that word: tr ' ' '\n' < FILE | grep WORD | wc -l
+
+Q2.Search for all the files that have a ‘.txt’ extension in the current working directory
+
+find . -type f -name "*.txt"
+
+
+Q3.Execute a specific command in all the subdirectories whose names starts with “aws”.For example, your sub-directories are “aws_1”, 
+“aws_2”, “gcp_1”, “aws_3”., Execute “pwd” command in the directories “aws_1”, “aws_2” and “aws_3”
+
+
+Q4.Consider a text file and replace a specific word with any word of your choice
+
+sed -i 's/original/new/g' file.txt
+
+Explanation:
+'sed' is the Stream EDitor
+'-i' is in-place ie save back to the original file
+'s' is the substitute command
+'original' is a regex describing the word to replace
+'new' is the text to replace it with
+'g' is global ie replace all and not just the first occurrence
+'file.txt' is the file name
+
+
+Q5.How to find a specific file in the system
+
+Example: find /home/username/ -name "*.txt"
