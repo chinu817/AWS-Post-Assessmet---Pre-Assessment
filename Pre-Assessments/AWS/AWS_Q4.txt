@@ -1,0 +1,12 @@
+Q4.Steps for Hosting a Static Website on Amazon S3
+
+1.From the Services menu at the top, select S3
+2.Create an Amazon S3 Bucket(a place to dump your files)
+3.Enter Bucket details like Name and Region(location closest to you) and then click Next
+4.Configure all the options(info like Versioning, Server Access Login, Tags)
+5.Set all the permissions as needed
+6.Review all the options and then click Create Bucket
+8.Click on your Bucket and enable the Static Website Hosting option
+9.Upload your Static Website Code to the Bucket
+10.Access Your Static Website Content Over the Internet through the AWS Region-Specific Web Address 
+11.You may even use a Custom Domain
