@@ -1,0 +1,36 @@
+Q1. IAM for s3 only.
+1. Go to IAM.
+2. Go to policy.
+3. Create you own policy.
+4. Go to json.
+5. Give the name, give the description.
+6. Attach json file:-
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                        "s3:GetBucketLocation",
+                        "s3:ListAllMyBuckets"
+                      ],
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::YOUR-BUCKET",
+                "arn:aws:s3:::YOUR-BUCKET/*"
+            ]
+        }
+    }
+6. Create group.
+7. Give group name.
+8. Attach policy.
+9. Click next.
+10. Go to group review screen.
+11. Click create group.
+12. Select group and go to action for add  user to group.
+13. Add user.

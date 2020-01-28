@@ -1,0 +1,19 @@
+Q2.What will be the outcome of this IAM Policy?
+{
+"Version": "2012-10-17",
+"Statement": [{
+"Action": "ec2:*",
+"Resource": "*",
+"Effect": "Allow"
+},
+{
+"Action": "*",
+"Resource": "*",
+"Effect": "Deny"
+}
+]
+}
+
+Ans.
+   All users can take all actions on  ec2 and it's resources, but all users cannot access all the services and it's recources.
+All users can only access ec2 and it's resources.
